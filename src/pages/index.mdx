@@ -92,9 +92,6 @@ export const components = {pre: CodeBlock, table: Table}
   ]}
   />
 
-<HighlightedSection>
-Abstract will be added later.
-</HighlightedSection>
 
 <h2 id="appendix-a">Appendix A: Overview of Indoor Navigation Technologies</h2>
 
@@ -118,68 +115,48 @@ Abstract will be added later.
 
 - **Natural Language Processing (NLP)**: Large language models (LLMs) provide human-like navigation directions, improving system usability for blind individuals. According to research, 83.3% of users considered LLM-generated instructions accurate and easy to follow, making navigation aids more accessible [3].
 
+<h2 id="appendix-c">Appendix C: User Experiences and Accessibility Insights</h2>
+
+<p>AI-based navigation systems have improved in technical performance, achieving high accuracy in localization (3 cm with UWB, 1.29 meters with graph neural networks) and obstacle detection (95-97.3\% with deep learning models).  These technologies may be used in academic contexts, as shown by Johns Hopkins and University of Central Asia systems. Most studies use controlled or simulated settings, with little real-world assessment of blind students in various university settings like Bangladesh.</p>
+<p>User-centric research show university navigation demands including identifying rooms and spotting impediments. Independent navigation requires head-level obstacle detection and interactive feedback, which existing systems typically lack. Commercial solutions like Navigine and wearable gadgets like NOA by biped.ai are useful, but universities need further proof.</p>
+<p>Future research should focus university field investigations with blind students to measure usability and efficacy to fill these gaps.  An inclusive design using multimodal input (auditory, tactile, and haptic) can improve accessibility and user experience.  AI-based navigation systems can improve campus life for blind students by bridging technology advances and practical implementation, supporting institutional accessibility and inclusion goals.</p>
 
 
-<h2 id="figures">Figures</h2>
+<h2 id="appendix-d">Appendix D: Advanced AI Techniques for Navigation Systems</h2>
+<p>System dependability may be improved by advanced AI approaches in dynamic campus situations. Reinforcement learning lets systems adapt to shifting crowds or transitory impediments by learning from environmental interactions in real time. Through collaborative training without exposing sensitive data, federated learning may create models that generalize across campuses and adapt to diverse institution architectures. Systems can be developed and tested on campus digital twins to ensure robustness before implementation. Generative AI might anticipate crowd movements and adapt routes. Real-time object identification using deep learning can enhance obstacle avoidance, attaining up to 99.56\% accuracy in regulated situations. These methods should be combined to construct responsive, scalable navigation systems in future study.</p>
 
-Use the figure component to display images, videos, equations, or any other element, with an optional caption.
+<h2 id="tables">Appendix E: Tables</h2>
+
+| System Name | AI Technology | Localization Accuracy | Tested in University Settings |
+| :--- | :--- | :--- | :--- |
+| HoGNNLoc | Graph Neural Network | 1.29 m at 80% CDF | Yes (UJIIndoorLoc) |
+| Autoencoder-based CNN | Convolutional Neural Network | 4.55 m mean error | Yes (UJIIndoorLoc) |
+| UWB with DNN | Deep Neural Network | 3 cm mean absolute error | No |
+| Wearable RGB-D System | Not specified | 0.88 m average error | Yes (university-like) |
 
 <Figure>
-  <Image slot="figure" source={transformer} altText="Diagram of the transformer deep learning architecture." />
-  <span slot="caption">Diagram of the transformer deep learning architecture.</span>
+  <span slot="caption">Table 1: AI-Based Localization Systems for Indoor Navigation</span>
 </Figure>
 
-<h2 id="image-comparison-slider">Image comparison slider</h2>
+| System Name | AI Technology | Detection Accuracy |
+| :--- | :--- | :--- |
+| AI-SenseVision | YOLOv3 | 83.44% mAP |
+| Smart Assistive Framework | AlexNet | 99.56% validation accuracy |
+| EchoSight | Deep Learning | 95% accuracy |
+| Stair Detection | Deep Learning | 97.3% accuracy |
 
-An interactive, accessible slider component with keyboard navigation.
 <Figure>
-  <ImageComparison slot="figure" client:load imageUrlOne={dogsDiffc.src} imageUrlTwo={dogsTrue.src} altTextOne="Photo of two dogs running side-by-side in shallow water, lossily compressed using the DiffC algorithm" altTextTwo="Original photo of two dogs running side-by-side in shallow water" />
-  <span slot="caption">A photo of two dogs running side-by-side in shallow water, lossily compressed using the <a href="https://jeremyiv.github.io/diffc-project-page/">DiffC algorithm</a>.</span>
+  <span slot="caption">Table 2: AI-Based Obstacle Detection Systems</span>
 </Figure>
 
-<h2 id="two-columns">Two columns</h2>
+| System Name | Function | AI Technology | Accuracy | Tested in University Settings |
+| :--- | :--- | :--- | :--- | :--- |
+| Johns Hopkins System | Wayfinding & Obstacle Detection | AI for mapping and guidance | Not specified | Yes |
+| Smart Assistive Navigation System | Wayfinding & Obstacle Detection | YOLOV8 for detection, navigation guidance | 91.7% detection accuracy | No |
 
-Use the two columns component to display two columns of content. In this example, the first column contains a figure with a YouTube video and the second column contains a figure with a custom [React](https://react.dev/) component. By default, they display side by side, but if the screen is narrow enough (for example, on mobile), they're arranged vertically.
-
-<TwoColumns>
-  <Figure slot="left">
-    <YouTubeVideo slot="figure" videoId="wjZofJX0v4M" />
-    <span slot="caption">Take a look at this YouTube video.</span>
-  </Figure>
-  <Figure slot="right">
-    <Splat slot="figure" client:idle />
-    <span slot="caption">Now look at this <a href="https://en.wikipedia.org/wiki/Gaussian_splatting">Gaussian splat</a>, rendered with a React component.</span>
-  </Figure>
-</TwoColumns>
-
-<h2 id="heading-levels">Heading levels</h2>
-
-Use headings to divide your content into sections.
-
-<h3 id="heading-3">Heading 3</h3>
-
-Go down a level to heading 3...
-
-<h4 id="heading-4">Heading 4</h4>
-
-...and down again to heading 4.
-
-<h2 id="latex">LaTeX</h2>
-
-You can also add LaTeX formulas, rendered during the build process using [KaTeX](https://katex.org/) so they're quick to load for visitors of your project page. You can write them inline, like this: <LaTeX inline formula="a^2 + b^2 = c^2" />. Or, you can write them as a block:
-
-<LaTeX formula="\int_a^b f(x) dx" />
-
-<h2 id="tables">Tables</h2>
-
-You can add simple tables using [GitHub Flavored Markdown syntax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables):
-
-| Model | Accuracy | F1 score | Training time (hours) |
-| :--- | :---: | :---: | :---: |
-| BERT-base | 0.89 | 0.87 | 4.5 |
-| RoBERTa-large | 0.92 | 0.91 | 7.2 |
-| DistilBERT | 0.86 | 0.84 | 2.1 |
-| XLNet | 0.90 | 0.89 | 6.8 |
+<Figure>
+  <span slot="caption">Table 3: Integrated AI-Based Navigation Systems</span>
+</Figure>
 
 <h2 id="bibtex-citation">BibTeX citation</h2>
 
