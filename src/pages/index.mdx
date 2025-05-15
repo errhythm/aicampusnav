@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Layout.astro
-title: Research Project Page Template
+title: "Enhancing Accessibility for Visually Impaired Students through AI-Powered Navigation at Academic Institutional Environments: The State of Systems, User Experiences, and Future Directions"
 description: Simple project page template for your research paper, built with Astro and Tailwind CSS
 favicon: favicon.svg
 thumbnail: screenshot-light.png
@@ -33,70 +33,81 @@ export const components = {pre: CodeBlock, table: Table}
   title={frontmatter.title}
   authors={[
     {
-      name: "Roman Hauksson",
-      url: "https://roman.technology",
-      institution: "Independent",
-      notes: ["*", "†"],
+      name: "Ehsanur Rahman Rhythm",
+      url: "https://orcid.org/0000-0002-4641-508X",
+      institution: "BRAC University & IIT, University of Dhaka",
+      notes: ["1", "4"],
     },
     {
-      name: "Author Two",
-      institution: "Institution Two",
-      notes: ["*", "†"],
+      name: "Rakibul Hasan",
+      institution: "BRAC University & Northern University Bangladesh",
+      notes: ["1", "2"],
     },
     {
-      name: "Author Three",
-      institution: "Institution Three",
-      notes: ["†"],
+      name: "Md Mahadi Hasan",
+      institution: "BRAC University & Northern University Bangladesh",
+      notes: ["1", "2"],
     },
     {
-      name: "Author Four",
-      institution: "Institution Four",
+      name: "Labib Hasan Khan",
+      institution: "BRAC University",
+      notes: ["1"],
+    },
+    {
+      name: "Md Sabbir Hossain",
+      institution: "BRAC University",
+      notes: ["1"],
+    },
+    {
+      name: "Annajiat Alim Rasel",
+      url: "https://orcid.org/0000-0003-0198-3734",
+      institution: "BRAC University & Jahangirnagar University",
+      notes: ["1", "3"],
+    },
+    {
+      name: "Mohammad Zahidur Rahman",
+      url: "https://orcid.org/0000-0002-0998-569X",
+      institution: "Jahangirnagar University",
+      notes: ["3"],
     },
   ]}
-  conference="Conference Name"
+  conference="International Conference on Data Science, AI and Applications (ICDSAIA) "
   notes={[
     {
-      symbol: "*",
-      text: "author note one",
+      symbol: "1",
+      text: "Department of Computer Science and Engineering, School of Data and Sciences, BRAC University, Bangladesh",
     },
     {
-      symbol: "†",
-      text: "author note two",
-    },
-  ]}
-  links={[
-    {
-      name: "Paper",
-      url: "",
-      icon: "ri:file-pdf-2-line",
+      symbol: "2",
+      text: "Department of Computer Science and Engineering, Northern University Bangladesh, Dhaka, Bangladesh",
     },
     {
-      name: "Code",
-      url: "https://github.com/RomanHauksson/academic-project-astro-template",
-      icon: "ri:github-line",
+      symbol: "3",
+      text: "Department of Computer Science and Engineering, Jahangirnagar University, Bangladesh",
     },
     {
-      name: "arXiv",
-      url: "",
-      icon: "academicons:arxiv",
+      symbol: "4",
+      text: "Institute of Information Technology, University of Dhaka, Dhaka-1000, Bangladesh",
     },
-    {
-      name: "Bluesky",
-      url: "",
-      icon: "ri:bluesky-line"
-    }
   ]}
   />
 
-<Video source={outside} />
-
 <HighlightedSection>
-
-## Abstract
-
-This is a live demo for a template you can use to create a simple project page for your research paper. See the code for the template and instructions on how to use it yourself [here](https://github.com/RomanHauksson/academic-project-astro-template). It's made with the [Astro web framework](https://astro.build/) and styled with [Tailwind CSS](https://tailwindcss.com/). You write the content in [MDX](https://mdxjs.com/), which enables markdown formatting like **bold**, _italics_, and ~strikethrough~, as well as custom components like <SmallCaps>small caps.</SmallCaps>
-
+Abstract will be added later.
 </HighlightedSection>
+
+## Appendix A: Overview of Indoor Navigation Technologies
+
+- **Bluetooth Low Energy (BLE) Beacons**: BLE beacons are small, inexpensive devices that send signals to smartphones, allowing for proximity-based location. By detecting signal strength, these systems can predict a user's location to within a few meters, making them appropriate for large-scale deployments in university settings [1].
+
+- **Wi-Fi Positioning**: Wi-Fi positioning triangulates a user's location using signal levels from several access points. While frequently available, signal interference, common in busy campuses, can reduce its precision to 5-10 meters.
+
+- **Ultra-Wideband (UWB)**: UWB measures radio wave travel time between devices for centimeter-accuracy location. Precision makes it ideal for complex navigation tasks, but needs specialized equipment [2].
+
+- **Computer Vision**: Computer vision scans camera pictures to identify landmarks, signs, and barriers, delivering positional and contextual information. Blind users needing real-time environmental awareness will be helped from this.
+
+- **Inertial Measurement Units (IMUs)**: IMUs with accelerometers and gyroscopes measure motion and orientation. When used with other technologies, dead reckoning can predict location changes, enhancing navigation continuity in signal-poor areas.
+
 
 ## Figures
 
@@ -161,11 +172,10 @@ You can add simple tables using [GitHub Flavored Markdown syntax](https://docs.g
 
 ## BibTeX citation
 
-```bibtex
-@misc{roman2024academic,
-  author = "{Roman Hauksson}",
-  title = "Academic Project Page Template",
-  year = "2024",
-  howpublished = "\url{https://research-template.roman.technology}",
-}
-```
+Citation format will be updated when published.
+
+## References
+
+[1] Campus Navigation System | University Indoor Navigation Solutions — navigine.com. https://navigine.com/industries/universities/, [Accessed 14-05-2025]
+
+[2] Arslantas, Y. E., and Vala Jeyhani. "Indoor positioning: ultra-wideband." 2024.

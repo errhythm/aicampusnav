@@ -21,7 +21,7 @@ const { authors } = Astro.props;
             author.name
           )}
           {author.notes && (
-            <sup class="text-xl">
+            <sup class="text-sm">
               {author.notes.map(
                 (note, index, array) =>
                   note + (index < array.length - 1 ? "," : "")
@@ -29,7 +29,7 @@ const { authors } = Astro.props;
             </sup>
           )}
         </span>
-        {author.institution && <p>{author.institution}</p>}
+        {author.institution && <p class="text-sm">{author.institution}</p>}
       </div>
     ))
   }

@@ -42,8 +42,18 @@ td {
   @apply px-4;
 }
 ul {
-  @apply prose list-disc list-inside w-full;
+  @apply prose list-disc list-outside ml-6 w-full text-zinc-900 dark:text-zinc-100 text-lg text-left;
+  marker-color: #18181b;
+}
+ul li::marker {
+  color: #18181b;
+}
+html.dark ul li::marker {
+  color: #fff;
 }
 ol {
-  @apply prose list-decimal list-inside w-full;
+  @apply prose list-decimal list-outside ml-6 w-full text-zinc-900 dark:text-zinc-100 text-lg text-left;
+}
+strong, b {
+  @apply font-bold text-zinc-900 dark:text-white;
 }
