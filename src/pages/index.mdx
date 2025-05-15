@@ -96,7 +96,7 @@ export const components = {pre: CodeBlock, table: Table}
 Abstract will be added later.
 </HighlightedSection>
 
-## Appendix A: Overview of Indoor Navigation Technologies
+<h2 id="appendix-a">Appendix A: Overview of Indoor Navigation Technologies</h2>
 
 - **Bluetooth Low Energy (BLE) Beacons**: BLE beacons are small, inexpensive devices that send signals to smartphones, allowing for proximity-based location. By detecting signal strength, these systems can predict a user's location to within a few meters, making them appropriate for large-scale deployments in university settings [1].
 
@@ -108,8 +108,19 @@ Abstract will be added later.
 
 - **Inertial Measurement Units (IMUs)**: IMUs with accelerometers and gyroscopes measure motion and orientation. When used with other technologies, dead reckoning can predict location changes, enhancing navigation continuity in signal-poor areas.
 
+<h2 id="appendix-b">Appendix B: AI Techniques in Navigation Systems</h2>
 
-## Figures
+- **Localization**: Machine learning systems, such neural networks, accurately forecast user locations using sensor data. Graph neural networks may achieve interior localization errors as low as 1.29 meters, demonstrating its potential for precise academic building placement.
+
+- **Obstacle Detection**: Deep learning models, especially CNNs, excel in detecting barriers in video or sensor data. YOLO systems, adjusted for real-time obstacle identification, achieve accuracy rates surpassing 99.9% in controlled conditions. This is essential for safe navigation around dangers like sloping pillars or elevators.
+
+- **Path Planning**: AI systems, such as reinforcement learning and A*, calculate ideal pathways while avoiding obstacles. Reinforcement learning may leverage real-time data to adjust to dynamic campus circumstances like crowded hallways.
+
+- **Natural Language Processing (NLP)**: Large language models (LLMs) provide human-like navigation directions, improving system usability for blind individuals. According to research, 83.3% of users considered LLM-generated instructions accurate and easy to follow, making navigation aids more accessible [3].
+
+
+
+<h2 id="figures">Figures</h2>
 
 Use the figure component to display images, videos, equations, or any other element, with an optional caption.
 
@@ -118,7 +129,7 @@ Use the figure component to display images, videos, equations, or any other elem
   <span slot="caption">Diagram of the transformer deep learning architecture.</span>
 </Figure>
 
-## Image comparison slider
+<h2 id="image-comparison-slider">Image comparison slider</h2>
 
 An interactive, accessible slider component with keyboard navigation.
 <Figure>
@@ -126,7 +137,7 @@ An interactive, accessible slider component with keyboard navigation.
   <span slot="caption">A photo of two dogs running side-by-side in shallow water, lossily compressed using the <a href="https://jeremyiv.github.io/diffc-project-page/">DiffC algorithm</a>.</span>
 </Figure>
 
-## Two columns
+<h2 id="two-columns">Two columns</h2>
 
 Use the two columns component to display two columns of content. In this example, the first column contains a figure with a YouTube video and the second column contains a figure with a custom [React](https://react.dev/) component. By default, they display side by side, but if the screen is narrow enough (for example, on mobile), they're arranged vertically.
 
@@ -141,25 +152,25 @@ Use the two columns component to display two columns of content. In this example
   </Figure>
 </TwoColumns>
 
-## Heading levels
+<h2 id="heading-levels">Heading levels</h2>
 
 Use headings to divide your content into sections.
 
-### Heading 3
+<h3 id="heading-3">Heading 3</h3>
 
 Go down a level to heading 3...
 
-#### Heading 4
+<h4 id="heading-4">Heading 4</h4>
 
 ...and down again to heading 4.
 
-## LaTeX
+<h2 id="latex">LaTeX</h2>
 
 You can also add LaTeX formulas, rendered during the build process using [KaTeX](https://katex.org/) so they're quick to load for visitors of your project page. You can write them inline, like this: <LaTeX inline formula="a^2 + b^2 = c^2" />. Or, you can write them as a block:
 
 <LaTeX formula="\int_a^b f(x) dx" />
 
-## Tables
+<h2 id="tables">Tables</h2>
 
 You can add simple tables using [GitHub Flavored Markdown syntax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables):
 
@@ -170,12 +181,14 @@ You can add simple tables using [GitHub Flavored Markdown syntax](https://docs.g
 | DistilBERT | 0.86 | 0.84 | 2.1 |
 | XLNet | 0.90 | 0.89 | 6.8 |
 
-## BibTeX citation
+<h2 id="bibtex-citation">BibTeX citation</h2>
 
 Citation format will be updated when published.
 
-## References
+<h2 id="references">References</h2>
 
 [1] Campus Navigation System | University Indoor Navigation Solutions — navigine.com. https://navigine.com/industries/universities/, [Accessed 14-05-2025]
 
 [2] Arslantas, Y. E., and Vala Jeyhani. "Indoor positioning: ultra-wideband." 2024.
+
+[3] Dorbala, V. R., et al. "LLMs Generate Human-like Wayfinding Instructions for Indoor Navigation." 2024.
